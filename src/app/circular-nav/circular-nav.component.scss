@@ -1,0 +1,27 @@
+$translateVal: -170px;
+$navLogoSize: 300px;
+
+.simom-home {
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  margin:auto;
+  width:$navLogoSize;
+  height:$navLogoSize + 50;
+}
+
+.simom-item {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 180px;
+  transition: 0.3s;
+}

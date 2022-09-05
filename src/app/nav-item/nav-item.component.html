@@ -1,0 +1,7 @@
+<div [ngStyle]="{'transform': 'translateX(-350px)'}" class="root" (click)="test()" (mouseenter)="isShowingDetails=true" (mouseleave)="isShowingDetails=false" >
+    <a [style.rotate]="getRotation()">
+        <span *ngIf="!isShowingDetails">{{item.title}}</span>
+        <span *ngIf="isShowingDetails" class="details">{{item.detail}}</span>
+    </a>
+</div>
+ 

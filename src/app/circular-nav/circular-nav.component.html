@@ -1,0 +1,13 @@
+<nav class="menu">
+    <div class="simom-home">
+        <img src="assets/logo.gif" width="300" height="300" />
+        <app-subtitle [text]="'software engineer'"></app-subtitle>
+    </div>
+
+    <ul>
+        <li *ngFor="let item of navItems; let i = index" 
+            [style.rotate]="getRotationForItem(i)" class="simom-item">
+            <app-nav-item [item]="item" [index]="i"></app-nav-item>
+        </li>
+    </ul>
+</nav>
