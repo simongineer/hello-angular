@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core'
-import { IDescribe } from '../model/describe';
+import { Component, Input, OnInit} from '@angular/core'
+import { IPage } from '../model/page';
 
 @Component({
   selector: 'app-nav-item',
@@ -7,9 +7,10 @@ import { IDescribe } from '../model/describe';
   styleUrls: ['./nav-item.component.scss']
 })
 export class NavItemComponent implements OnInit {
-  @Input() item: IDescribe = {
+  @Input() item: IPage = {
     title: "",
-    detail: ""
+    detail: "",
+    routerLink: ""
   };
   @Input() index: number = 0;
   isShowingDetails: boolean = false;
@@ -34,6 +35,7 @@ export class NavItemComponent implements OnInit {
     const calculatedTransition: number = 360 / 6 * this.index;
     return calculatedTransition + "deg";
   }
+
   test()
   {
     console.log("hello angular")

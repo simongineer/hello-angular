@@ -6,24 +6,21 @@
 }
 
 .details {
-    font-size: 0.5em;
-    line-height: 1;
-    color: yellow;
+  font-size: 0.5em;
+  line-height: 1;
+  color: yellow;
 }
 
 a {
-    display: block;
-    width: inherit;
-    height: inherit;
-    color: rgba(255, 255, 255, 0.7);
+  display: block;
+  width: inherit;
+  height: inherit;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3em;
+}
 
-    font-size: 3em;
-    pointer-events: none;
-  }
-
-  span {
-    position: absolute;
-    top: 20%;
-    text-align: center;
-
-  }
+span {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
